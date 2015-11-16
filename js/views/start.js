@@ -12,11 +12,13 @@ var Start = Backbone.View.extend({
 	className:'view',
 	events: {
 		"click button#submit": "url",
-		"click button#load": "next"
+		"click button#load": "next",
+		"click #top": "top"
 	},
 	initialize:function(){
 		this.render();
 		this.listenTo(this.collection, "add", this.addPhotos);
+		this.top();
 	},
 	render:function(){
 		var templateForm = _.template(formTemplate);
@@ -38,21 +40,19 @@ var Start = Backbone.View.extend({
 	},
 	addPhotos: function(models){
 		var model = models.toJSON();
+		var textLength = model.text.length;
 		var searchResults = $('#searchResults');
 		var templateResa = _.template(resaTemplate);
 		var templateComments = _.template(comTemplate); 
-		var j = 0;
-		$('.buttonLoad').empty();
-		searchResults.append(templateResa(model)),
-		_.each(model.text,function(comment){
-			if(j < 3){
-				searchResults.append(templateComments(comment));
-				j++;
+		searchResults.append(templateResa(model));
+		for(var i=0; i < textLength ; i++){
+			if(i < 3){
+				searchResults.append(templateComments(model.text[i]));
 			}
-		});	
+		};
+		$('.buttonLoad').empty();
 		var templateButton = _.template(buttonTemplate);
 		searchResults.append(templateButton);
-		this.top();
 	},
 	top:function(){
 		var top = 250; 
@@ -61,12 +61,9 @@ var Start = Backbone.View.extend({
 			if($(this).scrollTop() > top) $('#top').fadeIn();
 			else $('#top').fadeOut();
 		});
-		$('#top').click(function(){
-			$('body').animate({
-			scrollTop: 0
-			}, delay);
-		
-		});
+		$('body').animate({
+		scrollTop: 0
+		}, delay);
 	}
 });
 return Start;
