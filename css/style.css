@@ -7,11 +7,6 @@
 	background:#135587;
 	height:45px;
 }
-.icon{
-	display:block;
-	height:45px;
-	margin:auto;
-}
 .search {
 	background:#DCDCDC;
 }
@@ -19,7 +14,6 @@
 	padding:30px;
 	background:#DCDCDC;
 }
-
 input[type='search'] {
 	height:30px;
 	width:300px;
@@ -132,7 +126,7 @@ input[type='search'] {
 	width:100%;
 	margin-top:40px;
 }
-#top {
+#top{
 	display:none;
 	position:fixed;
 	bottom:75px;
