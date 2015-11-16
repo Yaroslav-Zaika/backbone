@@ -103,11 +103,10 @@ input[type='search'] {
 	background:#FFFFFF;
 }
 .groupCaption{
-	
 	margin: 10px 0 10px 15px;
 	float:left;
 	background:#FFFFFF;
-    max-width:100%;
+    max-width:95%;
 }
 .captionProfile{
 	float:left;
