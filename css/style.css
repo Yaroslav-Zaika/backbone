@@ -7,6 +7,12 @@
 	background:#135587;
 	height:45px;
 }
+.icon{
+	display:block;
+	height:45px;
+	margin:auto;
+	
+}
 .search {
 	background:#DCDCDC;
 }
