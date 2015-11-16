@@ -1,0 +1,142 @@
+*{
+	margin:0;
+	padding:0;
+	background:#F5F5F5;
+}
+.logo{
+	background:#135587;
+	height:45px;
+}
+.icon{
+	display:block;
+	height:45px;
+	margin:auto;
+}
+.search {
+	background:#DCDCDC;
+}
+.search-form{
+	padding:30px;
+	background:#DCDCDC;
+}
+
+input[type='search'] {
+	height:30px;
+	width:300px;
+	border-radius:10px;
+	padding-left:10px;
+	font-size:18px;
+}
+#searchResults{
+	background:#DCDCDC;
+	list-style-type: none;
+}
+.result{
+	border:3px solid #DCDCDC;
+}
+.like{
+	margin:0;
+}
+.comments{
+	margin:0 3px;
+}
+.profile{
+	float:left;
+	width:55px;
+	height:55px;
+	margin:3px 10px 0;
+}
+.username{
+	margin:0;	
+	font-size:16px;
+}
+.comment{
+	margin:0 0 0 10px;
+	word-wrap:break-word;	
+}
+.buttonLoad{
+	text-align:center;
+	background:#DCDCDC;
+	margin:10px 0;
+}
+#load{
+	padding:8px 25px;
+}
+.photoProfile{
+	float:left;
+	width:55px;
+	height:55px;
+	margin-right:10px;
+}
+.block{
+	margin:0;
+}
+.photoUsername{
+	font-size:16px;
+}
+.blocks{
+	padding:0;
+}
+.blockComments{
+	float:left;
+	margin:1px 0 0;
+	min-height:0;
+	background:#FFFFFF;
+}
+.photoComment{
+	vertical-align:top;
+	background:#FFFFFF;
+	margin:0 10px;
+	word-wrap:break-word;	
+}
+.group{
+	margin:10px 0 20px;
+	background:#FFFFFF;
+}
+.picPhoto{
+	padding:0;
+}
+.blockCaption{
+	float:left;
+	margin:40px 0 0;
+	padding-right:0;
+	background:#FFFFFF;
+}
+.groupCaption{
+	
+	margin: 10px 0 10px 15px;
+	float:left;
+	background:#FFFFFF;
+    max-width:100%;
+}
+.captionProfile{
+	float:left;
+	width:55px;
+	height:55px;
+	margin-right:10px;
+}
+.captionUsername{
+	font-size:16px;
+}
+.captionText{
+	word-wrap:break-word;
+	margin:40px 0 0;
+	height:100px;
+	width:100%;
+	background:#FFFFFF;
+	overflow: auto;
+}
+.pic{
+	width:100%;
+}
+.newPic{
+	width:100%;
+	margin-top:40px;
+}
+#top {
+	display:none;
+	position:fixed;
+	bottom:75px;
+	right:75px;
+	cursor:pointer;
+}
